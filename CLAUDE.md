@@ -5,8 +5,7 @@
 ## 当前状态
 
 ，工作目录中尚无任何源代码、构建配置文件、README 或测试
-- **构建与运行** —— 在选定包管理器、构建工具或运行时（例如 Node 系的 `npm`/`pnpm`、Python 系的 `uv`/`poetry`、Rust 系的 `cargo`、Go 系的 `go`）后，在此文档化安装、构建、代码检查（lint）与测试命令。
-- **单个测试的运行方式** —— 说明如何运行单个测试文件或测试用例（例如 `pytest path/to/test_file.py::test_name`、`npm test -- --testPathPattern=foo`、`go test ./pkg/foo -run TestBar`）。
+- **构建与运行** —— 在选定包管理器、构建工具或运行时（例如 Node 系的 `npm`/`pnpm`、Python 系的  说明如何运行单个测试文件或测试用例（例如 `pytest path/to/test_file.py::test_name`、`npm test -- --testPathPattern=foo`、`go test ./pkg/foo -run TestBar`）。
 - **架构** —— 待代码存在后，描述高层级的模块/服务布局。重点放在那些需要通读多个文件才能理解的"宏观"结构上（入口点、分层边界、数据流、共享抽象）。
 - **约定** —— 记录代码库中发现的、属于本项目特有的模式（错误处理风格、日志方式、依赖注入策略等）。无需罗列通用最佳实践。
 
