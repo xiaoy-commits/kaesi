@@ -1,11 +1,27 @@
-# oh-my-harness:begin
-!.agents/
-!.agents/skills/
-!.agents/skills/**
-!.codex/
-!.codex/hooks.json
-!.oh-my-harness/
-!.oh-my-harness/hooks/
-!.oh-my-harness/hooks/tree.mjs
-!.oh-my-harness/tree.md
-# oh-my-harness:end
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Coverage / test
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MAA 资源（用户本机维护，不进仓库）
+resource/cache/
+resource/runtime/
