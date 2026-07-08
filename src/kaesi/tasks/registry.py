@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Callable
 
 
 @dataclass(frozen=True)
@@ -41,14 +40,3 @@ def get_registry() -> TaskRegistry:
     if _registry is None:
         _registry = TaskRegistry()
     return _registry
-
-
-def register_task(name: str, description: str = "") -> Callable[[TaskSpec], TaskSpec]:
-    """装饰器：将函数所属任务注册到全局表。"""
-
-    def decorator(spec: TaskSpec) -> TaskSpec:
-        get_registry().register(spec)
-        return spec
-
-    # 简化形式：直接接收 name/description 构造 spec
-    return decorator
